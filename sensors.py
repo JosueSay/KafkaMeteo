@@ -1,0 +1,1 @@
+# mediciones antes de poder enviarlas y graficarlas
