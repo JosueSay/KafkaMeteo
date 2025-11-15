@@ -70,9 +70,9 @@ def consumeLoop(topic_name, bootstrap_servers, group_id):
 
 
 def main():
-    # uso: python consumer_json.py <topic> <group_id>
+    # uso: python consumer_json.py <carnet> <group_id>
     if len(sys.argv) < 3:
-        print("uso: python consumer_json.py <topic> <group_id>")
+        print("uso: python consumer_json.py <carnet> <group_id>")
         sys.exit(1)
 
     topic_name = sys.argv[1]
