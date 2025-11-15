@@ -44,7 +44,6 @@ def sendEncodedLoop(topic_name, bootstrap_servers):
 
 
 def main():
-    # uso: python producer_encoded.py <carnet>
     if len(sys.argv) < 2:
         print("uso: python producer_encoded.py <carnet>")
         sys.exit(1)

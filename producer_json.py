@@ -44,7 +44,6 @@ def sendLoop(topic_name, bootstrap_servers):
 
 
 def main():
-    # uso: python producer_json.py <carnet>
     if len(sys.argv) < 2:
         print("uso: python producer_json.py <carnet>")
         sys.exit(1)

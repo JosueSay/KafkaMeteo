@@ -45,7 +45,6 @@ def updatePlots(all_temp, all_hume, all_wind):
     plt.ylabel("humedad (%)")
     plt.xlabel("muestras")
 
-    # se puede imprimir el último valor de dirección de viento en consola
     plt.tight_layout()
     plt.pause(0.01)
 
@@ -70,7 +69,6 @@ def consumeLoop(topic_name, bootstrap_servers, group_id):
 
 
 def main():
-    # uso: python consumer_json.py <carnet> <group_id>
     if len(sys.argv) < 3:
         print("uso: python consumer_json.py <carnet> <group_id>")
         sys.exit(1)

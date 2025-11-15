@@ -67,7 +67,6 @@ def consumeEncodedLoop(topic_name, bootstrap_servers, group_id):
 
 
 def main():
-    # uso: python consumer_encoded.py <carnet> <group_id>
     if len(sys.argv) < 3:
         print("uso: python consumer_encoded.py <carnet> <group_id>")
         sys.exit(1)
