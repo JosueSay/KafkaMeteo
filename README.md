@@ -18,7 +18,7 @@ Se incluyen Producers, Consumers, simulación de sensores y gráficas en tiempo 
 ├── consumer_encoded.py
 ├── consumer_json.py
 ├── distribution.py
-├── docs/
+├── docs/                   # Guía y presentación de resultados
 ├── encoding.py
 ├── images/
 ├── producer_encoded.py
