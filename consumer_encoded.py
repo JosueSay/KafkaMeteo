@@ -30,7 +30,7 @@ def updateTimeSeries(all_temp, all_hume, all_wind, measurement):
     all_wind.append(measurement.get("direccion_viento"))
 
 
-def updatePlots(all_temp, all_hume, all_wind):
+def updatePlots(all_temp, all_hume):
     # graficar temperatura y humedad a partir de los datos decodificados
     plt.clf()
 
@@ -63,7 +63,7 @@ def consumeEncodedLoop(topic_name, bootstrap_servers, group_id):
 
         print(f"[consumer-encoded] topic={topic_name} data={measurement} raw={message.value.hex()}")
 
-        updatePlots(all_temp, all_hume, all_wind)
+        updatePlots(all_temp, all_hume)
 
 
 def main():

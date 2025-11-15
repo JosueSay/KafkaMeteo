@@ -30,7 +30,7 @@ def updateTimeSeries(all_temp, all_hume, all_wind, measurement):
     all_wind.append(measurement.get("direccion_viento"))
 
 
-def updatePlots(all_temp, all_hume, all_wind):
+def updatePlots(all_temp, all_hume):
     # graficar temperatura y humedad en una misma figura
     plt.clf()
 
@@ -65,7 +65,7 @@ def consumeLoop(topic_name, bootstrap_servers, group_id):
 
         print(f"[consumer] topic={topic_name} data={measurement}")
 
-        updatePlots(all_temp, all_hume, all_wind)
+        updatePlots(all_temp, all_hume)
 
 
 def main():
